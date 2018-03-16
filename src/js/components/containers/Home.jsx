@@ -31,19 +31,20 @@ export default class HomeComponent extends React.Component {
         skills: snap.val().skills,
         links: snap.val().links
       })
+      this.setState({
+        projects: loadedProjects
+      })
     });
-    this.setState({
-      projects: loadedProjects
-    })
   }
 
   render() {
-    console.log(this.state.projects);
+    console.log(this.state.projects.length);
+    console.table(this.state.projects);
     return (
       <div className="app-container">
         <div className="body-container">
           <About />
-          {this.state['projects'].map(project =>
+          {this.state.projects.map(project =>
             <ProjectBadges key={project.id} imageUrl={project.imageUrl} projectName={project.projectName} />
           )}
           {this.state.projects.map(data =>
