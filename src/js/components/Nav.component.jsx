@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
 import Logo from '../../../assets/JT-logo-2x.png';
+import '../../styles/Nav.scss';
 
 const Nav = () => {
     return (

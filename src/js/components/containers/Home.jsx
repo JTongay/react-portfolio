@@ -47,10 +47,6 @@ export default class HomeComponent extends React.Component {
           {this.state.projects.map(project =>
             <ProjectBadges key={project.id} imageUrl={project.imageUrl} projectName={project.projectName} />
           )}
-          {this.state.projects.map(data =>
-            <h1>booyah</h1>
-          )}
-          <ProjectBadges key="1" imageUrl="https://i.lensdump.com/i/8RSZTo.png" projectName="booyah" />
         </div>
       </div>
     )

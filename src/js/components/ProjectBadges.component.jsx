@@ -1,11 +1,17 @@
 import React from 'react';
 
+import '../../styles/ProjectBadges.scss';
+
 const ProjectBadges = (props) => {
   return (
-    <section class="icons" id="icons-section">
-      <figure class="tint">
+    <section className="icons" id="icons-section">
+      <div className="card">
+        <h3>Title</h3>
+        <h4>Subtitle</h4>
         <img src={props.imageUrl} alt={props.projectName} />
-      </figure>
+        <p>Quick flavor text</p>
+        <button>Link to project info</button>
+      </div>
     </section>
   )
 }

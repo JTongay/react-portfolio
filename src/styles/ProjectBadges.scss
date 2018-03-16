@@ -1,0 +1,10 @@
+.icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 150px;
+  .card {    
+    width: 50%;
+  }
+}
