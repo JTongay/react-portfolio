@@ -13,8 +13,6 @@ export default class Root extends React.Component {
     return (
       <div>
         <Routing />
-        <h1>Booyah</h1>
-        <h2>Yooooo</h2>
       </div>
     )
   }

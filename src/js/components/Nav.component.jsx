@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
+import Logo from '../../../assets/JT-logo-2x.png';
+
 const Nav = () => {
     return (
         <nav>
-          <img src="images/JT-logo-2x.png" alt="" class="jt-logo" />
+          <img src={Logo} alt="" class="jt-logo" />
             <ul>
               <li className="links active-link"><a href="index.html">Portfolio</a></li>
               <li className="links"><a href="images/Joseph_Tongay_Resume.pdf" target="_Nameblank">Resume</a></li>

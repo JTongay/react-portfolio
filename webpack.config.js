@@ -27,7 +27,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['babel-preset-react']
+            presets: ['babel-preset-react', 'babel-preset-es2015']
           }
         }
       },
@@ -53,6 +53,17 @@ module.exports = {
             options: {
               includePaths: [path.resolve(__dirname, 'src','styles')],
               sourceMap: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
             }
           }
         ]

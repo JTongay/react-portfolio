@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "project_name": "Pokemon Stay!",
+      "image_url": "https://i.lensdump.com/i/8RSZTo.png", 
+      "project_story": "This was my very first project in my attendance at Galvanize. Just one month into the program, I was proficient in creating a static application using AJAX to make external API calls while utilizing bootstrap to create a responsive layout and the HTML5 canvas tag to create animations.",
+      "project_about": "Pokemon Stay! is an interactive pokedex where you can browse each generation's pokemon and click on their icon to see more information about the selected pokemon including a YouTube video that is relevant. Also, if you choose the explore, you can control a character using your keyboard to \"catch\" a randomly generated pokemon, click on its pokeball below and see that pokemon's information that way as well.",
+      "presentation_link": "",
+      "skills": ["HTML5", "CSS", "Bootstrap", "jQuery", "Paper.js"],
+      "links": {
+        "github": ["https://jtongay.github.io/q1-pokemon-stay/"],
+        "live_link": "https://github.com/jtongay/q1-pokemon-stay/"
+      }
+    },
+    {
+      "id": "2",
+      "project_name": "Raspberry Pi Smart TV",
+      "image_url": "https://i.lensdump.com/i/8RSrc2.png",
+      "project_story": "This is probably the most fun that I have had on any project. As a class, we had all just learned Angular, and we were instructed to use that knowledge and create something crazy while not being afraid of failing. With this in mind, a classmate and I decided we wanted to work with a Raspberry Pi and felt that using one to create a smart TV would be a fun and challenging project. My responsibility was to create the entire front-end using Ionic to make it a hybrid application. Unfortunately, I do not have it deployed to any app store because it costs a little bit more money than I would like to spend on a project.",
+      "project_about": "Rather than stating what it does, which should be pretty obvious, I will state how it works. With a Raspberry Pi, you must have git,the repository, node, omxplayer, and chromium installed. After running 'npm install', run 'npm start' to spin up the server, listening for any socket.io messages from the app. In the app side, you input your current IP address, search and pick a YouTube video, the Raspberry Pi will pick up the YouTube address, download it, and play it onto the screen where the Raspberry Pi is connected.",
+      "presentation_link": "",
+      "skills": [
+        "Node", "Express", "Socket.io", "Ionic", "Raspberry Pi"
+      ],
+      "links": {
+        "github": ["https://github.com/JTongay/q3-smart-tv"],
+        "live_link": null
+      }
+    },
+    {
+      "id": "3",
+      "project_name": "Digital Rolodex",
+      "image_url": "https://i.lensdump.com/i/8RS05i.png",
+      "project_story": "This project was a first for a few things. It was my first group project (group of 5), first full-stack project, first time presenting to large room, and full application written in TDD style. My responsibility was constructing the ERD, set up the database migrations and seeds, and incorporate the tags feature.",
+      "project_about": "This concept was created by one of my classmates, where if a person has a collection of business cards and loses them or wants to have access to them anywhere, they can create a digital rolodex (just like the title says). A user can either add a contact via a form, or take a picture of a business card and will auto-fill the form with the details it has. After a contact is created, the user will be prompted to select from a few descriptive tags where they can drag and drop all relevant tags on the newly added contact. Once that is completed, the user will be redirected back to their homepage where they can filter all contacts by name or tag.",
+      "presentation_link": "",
+      "skills": [
+        "Node", "Express", "EJS", "Semantic UI", "jQuery", "Mocha", "Chai", "Supertest", "Heroku"
+      ],
+      "links": {
+        "github": ["https://github.com/midastouchprd/digital-rolodex"],
+        "live_link": "http://digital-rolodex.herokuapp.com/login"
+      }
+    },
+    {
+      "id": "4",
+      "project_name": "Power Ranking",
+      "image_url": "https://i.lensdump.com/i/8RSgO9.png",
+      "project_story": "This was my Galvanize Capstone Project. During this two-week process, I separated out the front and back-end repositories to emulate a production application as best as I could, while preparing a <a href=\"http: //prezi.com/x7ncy260uzyx/?utm_campaign=share&utm_medium=copy\" target=\"_blank\" class=\"presentation\">presentation</a> for large audience. I also took it upon myself to learn a brand new technology in Angular 2, and incorporate it as the front-end to my application.",
+      "project_about": "Power Ranking as a concept already exists in the sports world, where a bunch of a sports writers get together and come up with a ranked list of teams. I took this concept years ago and started power ranking any and all topics (like cereal, candy bars, comedy movies, etc.), causing lengthy conversations with friends and coworkers. This application follows that formula where a user can vote on topics, create new topics and items, and affect the global ranking that is displayed in a pie chart. The kicker of this application, is that you can vote via Twitter, by following a certain set of tweet rules. The tweet is put through sentiment analysis and will generate a score based on what was said, and update the global ranking.",
+      "presentation_link": "http: //prezi.com/x7ncy260uzyx/?utm_campaign=share&utm_medium=copy",
+      "skills": [
+        "Node", "Express", "Angular 2", "PostgreSQL", "Heroku", "AWS", "Bootstrap", "CSS", "Mocha", "Chai", "Supertest"
+      ],
+      "links": {
+        "github": ["https://github.com/JTongay/capstone-frontend", "https://github.com/JTongay/capstone-backend"],
+        "live_link": ""
+      }
+    }
+  ]
+}
