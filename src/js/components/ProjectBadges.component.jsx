@@ -4,15 +4,14 @@ import '../../styles/ProjectBadges.scss';
 
 const ProjectBadges = (props) => {
   return (
-    <section className="icons" id="icons-section">
+    <div className="icons" id="icons-section">
       <div className="card">
-        <h3>Title</h3>
-        <h4>Subtitle</h4>
-        <img src={props.imageUrl} alt={props.projectName} />
-        <p>Quick flavor text</p>
+        <h3>{props.project.projectName}</h3>
+        <h4>{props.project.projectAbout}</h4>
+        <img src={props.project.imageUrl} alt={props.project.projectName} />
         <button>Link to project info</button>
       </div>
-    </section>
+    </div>
   )
 }
 

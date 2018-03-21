@@ -45,7 +45,7 @@ export default class HomeComponent extends React.Component {
         <div className="body-container">
           <About />
           {this.state.projects.map(project =>
-            <ProjectBadges key={project.id} imageUrl={project.imageUrl} projectName={project.projectName} />
+            <ProjectBadges key={project.id} project={project} />
           )}
         </div>
       </div>

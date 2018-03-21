@@ -4,6 +4,7 @@ import { Switch, NavLink, Route } from 'react-router-dom';
 import HomeComponent from './containers/Home.jsx';
 import Routing from '../routing.jsx';
 
+// import '../../styles/normalize.css';
 import '../../styles/main.scss';
 
 export default class Root extends React.Component {

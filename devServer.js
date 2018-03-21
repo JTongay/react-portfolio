@@ -22,6 +22,7 @@ browserSync({
         publicPath: config.output.publicPath,
         noInfo: true,
         quiet: false,
+        reload: true,
         stats: {
           assets: false,
           colors: true,
