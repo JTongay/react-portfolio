@@ -6,6 +6,8 @@ import ProjectBadges from '../ProjectBadges.component.jsx';
 
 import FIREBASE_CONFIG from '../../firebase/config';
 
+import '../../../styles/Home.scss';
+
 export default class HomeComponent extends React.Component {
 
   constructor(props) {
@@ -26,6 +28,7 @@ export default class HomeComponent extends React.Component {
         projectName: snap.val().project_name,
         imageUrl: snap.val().image_url,
         projectStory: snap.val().project_story,
+        projectShort: snap.val().project_short,
         projectAbout: snap.val().project_about,
         presentationLink: snap.val().presentation_link,
         skills: snap.val().skills,
@@ -44,9 +47,11 @@ export default class HomeComponent extends React.Component {
       <div className="app-container">
         <div className="body-container">
           <About />
-          {this.state.projects.map(project =>
-            <ProjectBadges key={project.id} project={project} />
-          )}
+          <div className="badges-wrapper">
+            {this.state.projects.map(project =>
+              <ProjectBadges key={project.id} project={project} />
+            )}
+          </div>
         </div>
       </div>
     )

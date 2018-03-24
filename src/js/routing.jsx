@@ -10,8 +10,10 @@ const Routing = () => {
     <Router>
       <div>
         <Nav />
-        <Route exact path="/" component={HomeComponent} />
-        <Route path="/:id" component={Project} />
+        <Switch>
+          <Route exact path="/" component={HomeComponent} />
+          <Route path="/:id" component={Project} />
+        </Switch>
         <Footer />
       </div>
     </Router>

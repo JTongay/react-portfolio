@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node devServer.js"
+    "start": "babel-node devServer.js",
+    "live": "webpack-dev-server --progress --inline --hot"
   },
   "keywords": [],
   "author": "",
@@ -35,7 +36,9 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.13",
     "webpack-dev-middleware": "^3.0.1",
+    "webpack-dev-server": "^3.1.1",
     "webpack-hot-middleware": "^2.21.2"
   }
 }

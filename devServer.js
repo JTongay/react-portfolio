@@ -23,6 +23,7 @@ browserSync({
         noInfo: true,
         quiet: false,
         reload: true,
+        hot: true,
         stats: {
           assets: false,
           colors: true,

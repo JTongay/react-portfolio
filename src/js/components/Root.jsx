@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, NavLink, Route } from 'react-router-dom';
+import { Switch, NavLink, Route, BrowserRouter } from 'react-router-dom';
 
 import HomeComponent from './containers/Home.jsx';
 import Routing from '../routing.jsx';
