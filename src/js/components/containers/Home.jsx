@@ -12,8 +12,7 @@ export default class HomeComponent extends React.Component {
 
   constructor(props) {
     super(props)
-    this.app = firebase.initializeApp(FIREBASE_CONFIG);
-    this.database = this.app.database().ref().child('projects')
+    this.database = firebase.database().ref().child('projects')
     this.state = {
       projects: [],
       test: []

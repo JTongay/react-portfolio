@@ -42,7 +42,10 @@
 	    padding: 0.5rem;
 	    color: #333;
 	    text-align: center;
-	    text-decoration: none; 
+      // text-decoration: none;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

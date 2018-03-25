@@ -3,8 +3,7 @@ import {Link} from 'react-router-dom';
 
 import '../../styles/ProjectBadges.scss';
 
-const ProjectBadges = (props, context) => {
-  console.log(context)
+const ProjectBadges = (props) => {
   return (
     <div className="icons" id="icons-section">
       <div className="card">
