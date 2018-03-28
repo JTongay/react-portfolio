@@ -8,9 +8,17 @@
       "project_short": "Interactive, browsable, and searchable pokedex.",
       "project_about": "Pokemon Stay! is an interactive pokedex where you can browse each generation's pokemon and click on their icon to see more information about the selected pokemon including a YouTube video that is relevant. Also, if you choose the explore, you can control a character using your keyboard to \"catch\" a randomly generated pokemon, click on its pokeball below and see that pokemon's information that way as well.",
       "presentation_link": "",
-      "skills": ["HTML5", "CSS", "Bootstrap", "jQuery", "Paper.js"],
+      "skills": {
+        "0": "HTML5", 
+        "1": "CSS",
+        "2": "Bootstrap",
+        "3": "jQuery",
+        "4": "Paper.js"
+      },
       "links": {
-        "github": ["https://jtongay.github.io/q1-pokemon-stay/"],
+        "github": {
+          "0": "https://jtongay.github.io/q1-pokemon-stay/"
+        },
         "live_link": "https://github.com/jtongay/q1-pokemon-stay/"
       }
     },
@@ -22,11 +30,17 @@
       "project_short": "Searchable YouTube mobile app that projects to any screen via Raspberry Pi.",
       "project_about": "Rather than stating what it does, I will explain how it works. With a Raspberry Pi, you must have git,the repository, node, omxplayer, and chromium installed. After running 'npm install', run 'npm start' to spin up the server, listening for any socket.io messages from the app. In the app side, you input your current IP address, search and pick a YouTube video, the Raspberry Pi will pick up the YouTube address, download it, and play it onto the screen where the Raspberry Pi is connected.",
       "presentation_link": "",
-      "skills": [
-        "Node", "Express", "Socket.io", "Ionic", "Raspberry Pi"
-      ],
+      "skills": {
+        "0": "Node",
+        "1": "Express",
+        "2": "Socket.io",
+        "3": "Ionic",
+        "4": "Raspberry Pi"
+      },
       "links": {
-        "github": ["https://github.com/JTongay/q3-smart-tv"],
+        "github": {
+          "0": "https://github.com/JTongay/q3-smart-tv"
+        },
         "live_link": null
       }
     },
@@ -38,11 +52,21 @@
       "project_short": "Collection of business cards on the web through picture recognition.",
       "project_about": "This concept was created by one of my classmates, where if a person has a collection of business cards and loses them or wants to have access to them anywhere, they can create a digital rolodex (just like the title says). A user can either add a contact via a form, or take a picture of a business card and will auto-fill the form with the details it has. After a contact is created, the user will be prompted to select from a few descriptive tags where they can drag and drop all relevant tags on the newly added contact. Once that is completed, the user will be redirected back to their homepage where they can filter all contacts by name or tag.",
       "presentation_link": "",
-      "skills": [
-        "Node", "Express", "EJS", "Semantic UI", "jQuery", "Mocha", "Chai", "Supertest", "Heroku"
-      ],
+      "skills": {
+        "0": "Node",
+        "1": "Express",
+        "2": "EJS",
+        "3": "Semantic UI",
+        "4": "jQuery",
+        "5": "Mocha",
+        "6": "Chai",
+        "7": "Supertest",
+        "8": "Heroku"
+      },
       "links": {
-        "github": ["https://github.com/midastouchprd/digital-rolodex"],
+        "github": {
+          "0": "https://github.com/midastouchprd/digital-rolodex"
+        },
         "live_link": "http://digital-rolodex.herokuapp.com/login"
       }
     },
@@ -54,11 +78,24 @@
       "project_short": "Twitter sentiment analysis voting platform for any known topic.",
       "project_about": "Power Ranking as a concept already exists in the sports world, where a bunch of a sports writers get together and come up with a ranked list of teams. I took this concept years ago and started power ranking any and all topics (like cereal, candy bars, comedy movies, etc.), causing lengthy conversations with friends and coworkers. This application follows that formula where a user can vote on topics, create new topics and items, and affect the global ranking that is displayed in a pie chart. The kicker of this application, is that you can vote via Twitter, by following a certain set of tweet rules. The tweet is put through sentiment analysis and will generate a score based on what was said, and update the global ranking.",
       "presentation_link": "http: //prezi.com/x7ncy260uzyx/?utm_campaign=share&utm_medium=copy",
-      "skills": [
-        "Node", "Express", "Angular 2", "PostgreSQL", "Heroku", "AWS", "Bootstrap", "CSS", "Mocha", "Chai", "Supertest"
-      ],
+      "skills": {
+        "0": "Node",
+        "1": "Express",
+        "2": "Angular 2",
+        "3": "PostgreSQL",
+        "4": "Heroku",
+        "5": "AWS",
+        "6": "Bootstrap",
+        "7": "CSS",
+        "8": "Mocha",
+        "9": "Chai",
+        "10": "Supertest"
+      },
       "links": {
-        "github": ["https://github.com/JTongay/capstone-frontend", "https://github.com/JTongay/capstone-backend"],
+        "github": {
+          "0": "https://github.com/JTongay/capstone-frontend",
+          "1": "https://github.com/JTongay/capstone-backend"
+        },
         "live_link": ""
       }
     }

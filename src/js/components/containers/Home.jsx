@@ -40,8 +40,6 @@ export default class HomeComponent extends React.Component {
   }
 
   render() {
-    console.log(this.state.projects.length);
-    console.table(this.state.projects);
     return (
       <div className="app-container">
         <div className="body-container">
