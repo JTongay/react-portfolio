@@ -18,23 +18,20 @@ export default class Project extends React.Component {
     }
     this.linkRef.on('value', (snap) => {
       const linksArr = convertToArray(snap)
-      console.log(linksArr, 'linksArr')
       this.setState({
         links: linksArr
       })
     });
+  }
+  
+  componentWillMount() {
     this.skillsRef.on('value', (snap) => {
       const skillsArr = convertToArray(snap)
-      console.log(skillsArr, 'skillsArr')
       this.setState({
         skills: skillsArr
       })
     });
-  }
-
-  componentWillMount() {
     this.database.on('value', (snapshot) => {
-      console.log(snapshot.val());
       this.setState({
         project: snapshot.val()
       });

@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.project-info {
+  margin: 0 150px;
+  text-align: center;
+  color: #adadad;
+  .skills-used {
+    color: #29d3d3;
+  }
+  .project-screenshot {
+    max-width: 800px;
+  }
+}

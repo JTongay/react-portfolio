@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Skills } from '../components/Skills.component.jsx';
+import '../../styles/ProjectInfo.scss';
+
 const ProjectInfo = (props) => {
 
   const githubLinks = props.links[0]
@@ -28,19 +31,20 @@ const ProjectInfo = (props) => {
     const skillsUsed = skillsArr.join(', ')
     return <span className="skills-used">Skills used - {skillsUsed}</span>
   }
-  
+  console.log(props.skills)
   return (
     // All of this should come from props
-    <section class="pokestay" id="poke-section">
+    <section class="project-info">
       <h1>{props.project.project_name}</h1>
       <p>{props.project.project_story}</p>
       <p>{props.project.project_about}</p>
       {/* Make this the Skills Component */}
       {showSkills(props.skills)}
+      {/* {(props.skills === {}) ? <Skills skills={props.skills} /> : null} */}
       {/* Make this Dynamic via props */}
-      <img src={props.project.image_url} alt="" />
+      <img src={props.project.image_url} alt="" class="project-screenshot" />
       <div class="live-link">
-        <a href="https://jtongay.github.io/q1-pokemon-stay/" target="_blank">Live Link</a>
+        { props.links[1] ? <a href={props.links[1]} target="_blank">Live Link</a> : '' }
         {showGithubLinks(githubLinks)}
         {/* <a href={props.links[0]} target="_blank">Github</a> */}
       </div>
