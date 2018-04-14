@@ -3,6 +3,11 @@ import {Route, Redirect} from 'react-router-dom';
 import firebase from 'firebase';
 
 import ProjectInfo from '../ProjectInfo.component.jsx';
+import Skills from '../Skills.component.jsx';
+import ProjectPic from '../ProjectPic.component.jsx';
+import Links from '../Links.component.jsx';
+
+import '../../../styles/Project.scss';
 
 export default class Project extends React.Component {
   constructor(props, context) {
@@ -16,15 +21,15 @@ export default class Project extends React.Component {
       links: {},
       skills: {}
     }
+  }
+  
+  componentWillMount() {
     this.linkRef.on('value', (snap) => {
       const linksArr = convertToArray(snap)
       this.setState({
         links: linksArr
       })
     });
-  }
-  
-  componentWillMount() {
     this.skillsRef.on('value', (snap) => {
       const skillsArr = convertToArray(snap)
       this.setState({
@@ -39,18 +44,17 @@ export default class Project extends React.Component {
   }
 
   render() {
-    // this.setState({
-    //   links: this.state.links.split(','),
-    //   skills: this.state.skills.split(',')
-    // })
     if (!this.state.project) {
       return (
         <Redirect to="/" />
       )
     }
     return (
-      <div>
-        <ProjectInfo project={this.state.project} links={this.state.links} skills={this.state.skills} />
+      <div className="project-container">
+        <ProjectInfo project={this.state.project} />
+        <Skills skills={this.state.skills} />
+        <ProjectPic image={this.state.project.image_url} />
+        <Links links={this.state.links} />
       </div>
     )
   }

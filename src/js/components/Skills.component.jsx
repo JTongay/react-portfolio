@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styles/Skills.scss';
+
 const Skills = (props) => {
 
   let skillsUsed;
@@ -14,7 +16,7 @@ const Skills = (props) => {
   console.log(skillsUsed)
 
   return (
-    <div>
+    <div className="skills-container">
       <span className="skills-used">Skills used - {skillsUsed}</span>
     </div>
   )
