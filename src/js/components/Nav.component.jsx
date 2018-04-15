@@ -7,7 +7,9 @@ import '../../styles/Nav.scss';
 const Nav = () => {
     return (
         <nav>
-          <img src={Logo} alt="" class="jt-logo" />
+            <Link to="/">
+                <img src={Logo} alt="" class="jt-logo" />
+            </Link>
             <ul>
               <li className="links active-link"><a href="index.html">Portfolio</a></li>
               <li className="links"><a href="images/Joseph_Tongay_Resume.pdf" target="_Nameblank">Resume</a></li>

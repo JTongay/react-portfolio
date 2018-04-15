@@ -5,18 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node devServer.js",
+    "start": "babel-node devServer.js mode=development",
     "live": "webpack-dev-server --progress --inline --hot --env=development"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animated": "^0.2.2",
     "firebase": "^4.11.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "react-toolbox": "^2.0.0-beta.12"
+    "react-toolbox": "^2.0.0-beta.12",
+    "react-transition-group": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.1.0",
