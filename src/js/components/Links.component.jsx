@@ -23,7 +23,7 @@ const Links = (props) => {
   }
 
   return (
-    <div class="links-container">
+    <div className="links-container">
       {props.links[1] ? <a href={props.links[1]} target="_blank">Live Link</a> : ''}
       {showGithubLinks(props.links[0])}
     </div>

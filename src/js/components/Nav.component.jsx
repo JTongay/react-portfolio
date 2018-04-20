@@ -8,7 +8,7 @@ const Nav = () => {
     return (
         <nav>
             <Link to="/">
-                <img src={Logo} alt="" class="jt-logo" />
+                <img src={Logo} alt="" className="jt-logo" />
             </Link>
             <ul>
               <li className="links active-link"><a href="index.html">Portfolio</a></li>
