@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, NavLink, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Route, matchPath, BrowserRouter as Router } from 'react-router-dom';
 import TransitionGroup from 'react-transition-group';
 import AnimatedSwitch from './components/AnimatedSwitch.jsx';
 import firstChild from './utils/helpers';
@@ -13,22 +13,42 @@ export default class Routing extends Component {
 
   constructor(props) {
     super(props);
+    
   }
 
   render() {
     return (
-      <Router>
-        <div>
-          <Nav />
-          <Switch>
-            <Route 
-              exact 
-              path="/" component={HomeComponent} />
-            <Route path="/:id" component={Project} />
-          </Switch>
-          <Footer />
-        </div>
-      </Router>
+      <div className="wrapper">
+        <Route 
+          render ={({location}) => (
+            <TransitionGroup component='main'>
+              <AnimatedSwitch
+                key={location.key}
+                location={location}
+              >
+                <Route exact path="/"
+                  component={HomeComponent}
+                />
+                <Route path="/:id" 
+                  component={Project}
+                />
+              </AnimatedSwitch>
+            </TransitionGroup>
+          )}
+        />
+      </div>
     )
   }
 };
+{/* <Router>
+  <div>
+    <Nav />
+    <Switch>
+      <Route 
+        exact 
+        path="/" component={HomeComponent} />
+      <Route path="/:id" component={Project} />
+    </Switch>
+    <Footer />
+  </div>
+</Router> */}
