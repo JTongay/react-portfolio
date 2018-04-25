@@ -25,6 +25,7 @@ export default class Project extends React.Component {
   
   componentWillMount() {
     this.linkRef.on('value', (snap) => {
+      console.log(snap)
       const linksArr = convertToArray(snap)
       this.setState({
         links: linksArr
@@ -41,6 +42,10 @@ export default class Project extends React.Component {
         project: snapshot.val()
       });
     });
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   render() {
