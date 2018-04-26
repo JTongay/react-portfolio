@@ -10,13 +10,13 @@ const Links = (props) => {
       linksArr.push(links[val])
       // return <a href={links[val]}>Github</a>
     }
-    return linksArr.map((link) => {
+    return linksArr.map((link, index) => {
       if (link.includes('frontend')) {
-        return <a href={link}>Frontend Github</a>
+        return <a href={link} key={index}>Frontend Github</a>
       } else if (link.includes('backend')) {
-        return <a href={link}>Backend Github</a>
+        return <a href={link} key={index}>Backend Github</a>
       } else {
-        return <a href={link}>Github</a>
+        return <a href={link} key={index}>Github</a>
       }
     })
 

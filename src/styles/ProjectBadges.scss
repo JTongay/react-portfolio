@@ -2,50 +2,54 @@
 
 .icons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 35%;
-
-  .card {
-    flex: 1;
-    display: flex;
-    width: 100%;
-    padding-right: 0;
-    flex-direction: column;
-    background-color: $secondaryColor;
-    border-radius: 5px;
-    margin-bottom: 1em;
-    margin-right: 0;
-    padding: 1em;
-    height: auto;
-
-    img {
-      opacity: 0.75;
-      margin: 0 auto;
-      max-width: 100%;
-      min-width: 450px;
-    }
-
-    h4 {
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    button {
-      margin-top: 20px;
-      align-self: flex-start;
-      border: 1px solid #333; 
-	    padding: 0.5rem;
-	    color: #333;
-	    text-align: center;
-      // text-decoration: none;
-      a {
-        text-decoration: none;
-      }
-    }
-  }
 }
+
+// .icons {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: flex-start;
+//   flex-direction: row;
+//   margin: 0 auto;
+//   width: 35%;
+
+//   .card {
+//     flex: 1;
+//     display: flex;
+//     width: 100%;
+//     padding-right: 0;
+//     flex-direction: column;
+//     background-color: $secondaryColor;
+//     border-radius: 5px;
+//     margin-bottom: 1em;
+//     margin-right: 0;
+//     padding: 1em;
+//     height: auto;
+
+//     img {
+//       opacity: 0.75;
+//       margin: 0 auto;
+//       max-width: 100%;
+//       min-width: 450px;
+//     }
+
+//     h4 {
+//       width: 100%;
+//       white-space: nowrap;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//     }
+
+//     button {
+//       margin-top: 20px;
+//       align-self: flex-start;
+//       border: 1px solid #333; 
+// 	    padding: 0.5rem;
+// 	    color: #333;
+// 	    text-align: center;
+//       // text-decoration: none;
+//       a {
+//         text-decoration: none;
+//       }
+//     }
+//   }
+// }
