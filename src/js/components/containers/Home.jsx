@@ -1,6 +1,5 @@
 import React from 'react';
 import firebase from 'firebase';
-import { Button } from 'react-materialize'
 
 import About from '../About.component.jsx';
 import ProjectBadges from '../ProjectBadges.component.jsx';

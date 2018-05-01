@@ -1,9 +1,10 @@
 @import './variables.scss';
 
-// .badges-wrapper {
-//   padding: 25px 0;
-//   display: flex;
-//   flex-direction: row;
-//   align-content: flex-start;
-//   flex-wrap: wrap;
-// }
+.badges-wrapper {
+  padding: 25px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
