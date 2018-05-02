@@ -1,5 +1,8 @@
 @import './variables.scss';
 
+$hover: all 0.2s ease-in;
+$slide:all 0.5s 0.1s cubic-bezier(0.55,0,0.1,1);
+
 .badge {
   margin: 0 auto;
   display: flex;
@@ -14,11 +17,19 @@
     flex-direction: column;
     overflow: hidden;
 
+    &:hover {
+      .badge-image {
+        filter: contrast(100%);
+      }
+    }
+
     .badge-image {
       object-fit: fill;
-      height: 440px;
+      height: 410px;
       object-position: center;
-      transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91)
+      filter: contrast(70%);
+      transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+
     }
 
     .badge-body {
@@ -50,13 +61,13 @@
         text-transform: lowercase;
         padding: 15px;
         font-size: 0.875rem;
+        text-transform: none;
+        transition: filter 0.75s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 
         &:hover {
           cursor: pointer;
-        }
-
-        a {
-          text-decoration: none;
+          filter: contrast(70%);
+          color: $primaryColor;
         }
       }
     }

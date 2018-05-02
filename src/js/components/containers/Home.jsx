@@ -11,8 +11,9 @@ import '../../../styles/Home.scss';
 export default class HomeComponent extends React.Component {
 
   constructor(props) {
-    super(props)
-    this.database = firebase.database().ref().child('projects')
+    super(props);
+    this.database = firebase.database().ref().child('projects');
+    this.location = location;
     this.state = {
       projects: [],
       test: []

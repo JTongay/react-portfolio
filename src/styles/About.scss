@@ -8,7 +8,15 @@
     color: #fff;
     width: 100%;
 
+    img {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 1.25rem;
+        filter: contrast(75%);
+        // border-top-left-radius: 1.25rem;
+    }
+
     .about-me {
-        margin: 0 150px;
+        margin: 0 75px;
     }
 }
