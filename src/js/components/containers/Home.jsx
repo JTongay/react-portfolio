@@ -42,10 +42,10 @@ export default class HomeComponent extends React.Component {
 
   render() {
     return (
-      <div className="app-container">
-        <div className="body-container">
+      <div className='app-container'>
+        <div className='body-container'>
           <About />
-          <div className="badges-wrapper">
+          <div className='badges-wrapper'>
             {this.state.projects.map(project =>
               <ProjectBadges key={project.id} project={project} />
             )}
