@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, NavLink, Route, BrowserRouter as Router } from 'react-router-dom';
-import TransitionGroup from 'react-transition-group';
-import AnimatedSwitch from './components/AnimatedSwitch.jsx';
-import firstChild from './utils/helpers';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import Nav from './components/Nav.component.jsx';
 import Footer from './components/Footer.component.jsx';
@@ -21,10 +18,10 @@ export default class Routing extends Component {
         <div>
           <Nav />
           <Switch>
-            <Route 
-              exact 
-              path="/" component={HomeComponent} />
-            <Route path="/:id" component={Project} />
+            <Route
+              exact
+              path='/' component={HomeComponent} />
+            <Route path='/:id' component={Project} />
           </Switch>
           <Footer />
         </div>

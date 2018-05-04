@@ -1,14 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../../styles/Links.scss';
 
 const Links = (props) => {
 
   const showGithubLinks = (links) => {
-    const linksArr = []
+    const linksArr = [];
     for (let val in links) {
       linksArr.push(links[val])
-      // return <a href={links[val]}>Github</a>
     }
     return linksArr.map((link, index) => {
       if (link.includes('frontend')) {
@@ -20,15 +20,20 @@ const Links = (props) => {
       }
     })
 
-  }
+  };
 
   return (
-    <div className="links-container">
-      {props.links[1] ? <a href={props.links[1]} target="_blank">Live Link</a> : ''}
+    <div className='links-container'>
+      {props.links[1] ? <a href={props.links[1]} target='_blank'>Live Link</a> : null}
       {showGithubLinks(props.links[0])}
     </div>
   )
 
-}
+};
+
+Links.propTypes = {
+  links: PropTypes.any.isRequired
+};
+
 
 export default Links;

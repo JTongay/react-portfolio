@@ -4,8 +4,6 @@ import firebase from 'firebase';
 import About from '../About.component.jsx';
 import ProjectBadges from '../ProjectBadges.component.jsx';
 
-import FIREBASE_CONFIG from '../../firebase/config';
-
 import '../../../styles/Home.scss';
 
 export default class HomeComponent extends React.Component {

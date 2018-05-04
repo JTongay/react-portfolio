@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../../assets/JT-logo-2x.png';
 import '../../styles/Nav.scss';
 
 const Nav = () => {
     return (
-        <nav>
-            <Link to="/">
-                <img src={Logo} alt="" className="jt-logo" />
-            </Link>
-            <ul>
-              <li className="links active-link"><a href="index.html">Portfolio</a></li>
-              <li className="links"><a href="images/Joseph_Tongay_Resume.pdf" target="_Nameblank">Resume</a></li>
-              <li className="links"><a href="http://jtongay-challenge.ghost.io/" target="_Nameblank">Blog</a></li>
-              <li className="links"><a href="mailto:joseph.tongay@gmail.com">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <Link to='/'>
+          <img src={Logo} alt='jt-logo' className='jt-logo' />
+        </Link>
+        <ul>
+          <li className='links active-link'><Link to=''>Portfolio</Link></li>
+          <li className='links'><a href='images/Joseph_Tongay_Resume.pdf' target='_Nameblank'>Resume</a></li>
+          <li className='links'><a href='http://jtongay-challenge.ghost.io/' target='_Nameblank'>Blog</a></li>
+          <li className='links'><a href='mailto:joseph.tongay@gmail.com'>Contact</a></li>
+        </ul>
+      </nav>
     )
-}
+};
 
 export default Nav;

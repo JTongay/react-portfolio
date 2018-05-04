@@ -1,6 +1,7 @@
 import React from 'react';
-import {Route, Redirect} from 'react-router-dom';
+import { Redirect} from 'react-router-dom';
 import firebase from 'firebase';
+import PropTypes from 'prop-types';
 
 import ProjectInfo from '../ProjectInfo.component.jsx';
 import Skills from '../Skills.component.jsx';
@@ -22,17 +23,16 @@ export default class Project extends React.Component {
       skills: {}
     }
   }
-  
+
   componentWillMount() {
     this.linkRef.on('value', (snap) => {
-      console.log(snap)
-      const linksArr = convertToArray(snap)
+      const linksArr = convertToArray(snap);
       this.setState({
         links: linksArr
       })
     });
     this.skillsRef.on('value', (snap) => {
-      const skillsArr = convertToArray(snap)
+      const skillsArr = convertToArray(snap);
       this.setState({
         skills: skillsArr
       })
@@ -51,11 +51,11 @@ export default class Project extends React.Component {
   render() {
     if (!this.state.project) {
       return (
-        <Redirect to="/" />
+        <Redirect to='/' />
       )
     }
     return (
-      <div className="project-container">
+      <div className='project-container'>
         <ProjectInfo project={this.state.project} />
         <Skills skills={this.state.skills} />
         <ProjectPic image={this.state.project.image_url} />
@@ -65,11 +65,15 @@ export default class Project extends React.Component {
   }
 }
 
+Project.propTypes = {
+  match: PropTypes.object.isRequired
+};
+
 function convertToArray(snapshot) {
   const returnArr = [];
   snapshot.forEach((snap) => {
-    const item = snap.val()
+    const item = snap.val();
     returnArr.push(item)
-  })
+  });
   return returnArr;
 }

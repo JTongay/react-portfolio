@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../../styles/Skills.scss';
 
@@ -16,11 +17,15 @@ const Skills = (props) => {
   console.log(skillsUsed)
 
   return (
-    <div className="skills-container">
-      <span className="skills-used">Skills used - {skillsUsed}</span>
+    <div className='skills-container'>
+      <span className='skills-used'>Skills used - {skillsUsed}</span>
     </div>
   )
 
-}
+};
+
+Skills.propTypes = {
+  skills: PropTypes.any.isRequired
+};
 
 export default Skills;
