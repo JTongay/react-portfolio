@@ -12,11 +12,11 @@ const Links = (props) => {
     }
     return linksArr.map((link, index) => {
       if (link.includes('frontend')) {
-        return <a href={link} key={index}>Frontend Github</a>
+        return <a href={link} key={index} className='link' target='_blank'>Frontend Github</a>
       } else if (link.includes('backend')) {
-        return <a href={link} key={index}>Backend Github</a>
+        return <a href={link} key={index} className='link' target='_blank'>Backend Github</a>
       } else {
-        return <a href={link} key={index}>Github</a>
+        return <a href={link} key={index} className='link' target='_blank'>Github</a>
       }
     })
 
@@ -24,7 +24,7 @@ const Links = (props) => {
 
   return (
     <div className='links-container'>
-      {props.links[1] ? <a href={props.links[1]} target='_blank'>Live Link</a> : null}
+      {props.links[1] ? <a href={props.links[1]} target='_blank' className='link'>Live Link</a> : null}
       {showGithubLinks(props.links[0])}
     </div>
   )
