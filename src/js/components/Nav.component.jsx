@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../../assets/JT-logo-2x.png';
+import Resume from '../../../assets/Joseph_Tongay_Resume.pdf';
 import '../../styles/Nav.scss';
 
 const Nav = () => {
@@ -12,8 +13,8 @@ const Nav = () => {
         </Link>
         <ul>
           <li className='links active-link'><Link to=''>Portfolio</Link></li>
-          <li className='links'><a href='images/Joseph_Tongay_Resume.pdf' target='_Nameblank'>Resume</a></li>
-          <li className='links'><a href='http://jtongay-challenge.ghost.io/' target='_Nameblank'>Blog</a></li>
+          <li className='links'><a href={Resume} target='_blank'>Resume</a></li>
+          <li className='links'><a href='https://medium.com/@dirk.tongay' target='_blank'>Blog</a></li>
           <li className='links'><a href='mailto:joseph.tongay@gmail.com'>Contact</a></li>
         </ul>
       </nav>
