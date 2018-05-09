@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel-node devServer.js mode=development",
-    "live": "webpack-dev-server --progress --inline --hot --env=development"
+    "live": "webpack-dev-server --progress --inline --hot --env=development",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
