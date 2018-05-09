@@ -17,7 +17,7 @@ module.exports = {
         removeComments: true,
         collapseWhitespace: true
       },
-      inject: true
+      inject: 'body'
     })
   ],
   module: {
