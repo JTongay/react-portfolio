@@ -1,5 +1,4 @@
 node_modules/
-dist/
 src/js/firebase/config.js
 .idea/
 assets/.DS_Store
