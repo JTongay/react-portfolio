@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
+import Routing from './routing';
+import firebase from 'firebase';
+
+import FIREBASE_CONFIG from './firebase/config';
+
+import './styles/css/App.css';
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.app = firebase.initializeApp(FIREBASE_CONFIG);
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Routing />
       </div>
-    );
+    )
   }
 }
-
-export default App;

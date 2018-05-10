@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+nav {
+  margin: 25px 75px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end; }
+  nav .jt-logo {
+    max-height: 60px;
+    max-width: 60px;
+    justify-content: flex-start; }
+  nav ul {
+    margin-top: 0; }
+    nav ul li {
+      display: inline;
+      color: #adadad;
+      padding: 26px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #adadad; }
+        nav ul li a:hover {
+          color: #29d3d3;
+          cursor: pointer; }
+      nav ul li .active-link {
+        color: #29d3d3; }

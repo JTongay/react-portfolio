@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,2DAAoD;ACI3D,oCAAoB;EACnB,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,KAAK",
+"sources": ["../scss/variables.scss","../scss/ProjectPic.scss"],
+"names": [],
+"file": "ProjectPic.css"
+}

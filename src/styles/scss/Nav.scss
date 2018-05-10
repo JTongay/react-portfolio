@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+nav {
+	margin: 25px 75px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	.jt-logo {
+		max-height: 60px;
+		max-width: 60px;
+		justify-content: flex-start;
+	}
+	ul {
+		margin-top: 0;
+
+		li {
+			display: inline;
+			color: $secondaryColor;
+			padding: 26px;
+
+			a {
+				text-decoration: none;
+				color: $secondaryColor;
+
+				&:hover {
+					color: $primaryColor;
+					cursor: pointer;
+				}
+			}
+			.active-link {
+				color: $primaryColor;
+			}
+		}
+	}
+}

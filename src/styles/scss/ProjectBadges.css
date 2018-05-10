@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+.badge {
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem; }
+  .badge .badge-container {
+    background-color: whitesmoke;
+    border-radius: 0.25rem;
+    width: 590px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; }
+    .badge .badge-container:hover .badge-image {
+      filter: contrast(100%); }
+    .badge .badge-container .badge-image {
+      object-fit: fill;
+      height: 410px;
+      object-position: center;
+      filter: contrast(70%);
+      transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
+    .badge .badge-container .badge-body {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      padding: 1rem; }
+      .badge .badge-container .badge-body .badge-title {
+        font-weight: 300;
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+        text-transform: uppercase; }
+      .badge .badge-container .badge-body .badge-text {
+        flex: 1 1 auto;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 1.25rem; }
+      .badge .badge-container .badge-body .badge-button {
+        display: block;
+        width: 100%;
+        background-color: whitesmoke;
+        border: 1px solid #cccccc;
+        color: #adadad;
+        text-transform: lowercase;
+        padding: 15px;
+        font-size: 0.875rem;
+        text-transform: none;
+        transition: filter 0.75s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
+        .badge .badge-container .badge-body .badge-button:hover {
+          cursor: pointer;
+          filter: contrast(70%);
+          color: #29d3d3; }
