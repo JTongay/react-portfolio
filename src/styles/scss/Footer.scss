@@ -11,9 +11,9 @@
 
 		.contact-icons {
 			padding: 0 40px;
-			color: #adadad;
+			color: $secondaryColor;
 			&:hover {
-				color: #29d3d3;
+				color: $primaryColor;
 				cursor: pointer;
 			}
 		}

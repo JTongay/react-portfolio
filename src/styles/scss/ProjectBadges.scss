@@ -1,8 +1,5 @@
 @import './variables.scss';
 
-$hover: all 0.2s ease-in;
-$slide:all 0.5s 0.1s cubic-bezier(0.55,0,0.1,1);
-
 .badge {
 	margin: 0 auto;
 	display: flex;
@@ -11,11 +8,20 @@ $slide:all 0.5s 0.1s cubic-bezier(0.55,0,0.1,1);
 	.badge-container {
 		background-color: whitesmoke;
 		border-radius: 0.25rem;
-		width: 590px;
 		box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
+		flex-shrink: 2;
+		max-width: 580px;
+		min-width: 340px;
+
+		@media only screen and (min-width: 40rem) {
+			max-width: 295px;
+		}
+		@media only screen and (min-width: 56rem) {
+			max-width: 197px;
+		}
 
 		&:hover {
 			.badge-image {
@@ -25,10 +31,19 @@ $slide:all 0.5s 0.1s cubic-bezier(0.55,0,0.1,1);
 
 		.badge-image {
 			object-fit: fill;
-			height: 410px;
+			width: 100%;
+			//max-width: 580px;
+			//min-width: 340px;
+			//height: 400px;
 			object-position: center;
 			filter: contrast(70%);
 			transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+			@media only screen and (min-width: 40rem) {
+				max-height: 295px;
+			}
+			@media only screen and (min-width: 56rem) {
+				max-height: 197px;
+			}
 
 		}
 
