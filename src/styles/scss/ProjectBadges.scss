@@ -5,6 +5,10 @@
 	display: flex;
 	padding: 1rem;
 
+	@media (width: $small-screen) {
+		padding: .25rem;
+	}
+
 	.badge-container {
 		background-color: whitesmoke;
 		border-radius: 0.25rem;
@@ -14,12 +18,12 @@
 		overflow: hidden;
 		flex-shrink: 2;
 		max-width: 580px;
-		min-width: 340px;
+		min-width: 280px;
 
-		@media only screen and (min-width: 40rem) {
+		@media (width: 40rem) {
 			max-width: 295px;
 		}
-		@media only screen and (min-width: 56rem) {
+		@media (width: 56rem) {
 			max-width: 197px;
 		}
 
@@ -38,10 +42,10 @@
 			object-position: center;
 			filter: contrast(70%);
 			transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
-			@media only screen and (min-width: 40rem) {
+			@media (width: 40rem) {
 				max-height: 295px;
 			}
-			@media only screen and (min-width: 56rem) {
+			@media (width: 56rem) {
 				max-height: 197px;
 			}
 

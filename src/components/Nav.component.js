@@ -8,15 +8,15 @@ import '../styles/css/Nav.css';
 const Nav = () => {
   return (
     <nav>
-      <Link to='/'>
+      <Link to='/' className='logo-container'>
         <img src={Logo} alt='jt-logo' className='jt-logo' />
       </Link>
-      <ul>
-        <li className='links active-link'><Link to=''>Portfolio</Link></li>
-        <li className='links'><a href={Resume} target='_blank' rel="noopener noreferrer">Resume</a></li>
-        <li className='links'><a href='https://medium.com/@dirk.tongay' target='_blank' rel="noopener noreferrer">Blog</a></li>
-        <li className='links'><a href='mailto:joseph.tongay@gmail.com'>Contact</a></li>
-      </ul>
+      <div className='links-container'>
+        <div className='links active-link'><Link to=''>Portfolio</Link></div>
+        <div className='links'><a href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a></div>
+        <div className='links'><a href='https://medium.com/@dirk.tongay' target='_blank' rel='noopener noreferrer'>Blog</a></div>
+        <div className='links'><a href='mailto:joseph.tongay@gmail.com'>Contact</a></div>
+      </div>
     </nav>
   )
 };

@@ -7,8 +7,12 @@ nav {
 	justify-content: space-between;
 	align-items: flex-end;
 
-	@media only screen and (min-width: 320px) {
+	@media only screen and (min-width: $small-screen) {
 		margin: 0;
+		padding-top: 10px;
+		.logo-container {
+			margin: 0 auto;
+		}
 	}
 
 	.jt-logo {
@@ -16,16 +20,21 @@ nav {
 		max-width: 60px;
 		justify-content: flex-start;
 	}
-	ul {
+	.links-container {
 		margin-top: 0;
 
-		li {
+		@media only screen and (min-width: $small-screen) {
+			margin: 0 auto;
+			padding: 13px;
+		}
+
+		.links {
 			display: inline;
 			color: $secondaryColor;
 			padding: 26px;
 
-			@media only screen and (min-width: 320px) {
-				padding: 12px;
+			@media only screen and (min-width: $small-screen) {
+				padding: 5px 10px;
 			}
 
 			a {

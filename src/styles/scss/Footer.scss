@@ -4,6 +4,11 @@
 	border-top: 2px solid #adadad;
 	margin: 0 150px;
 	padding: 25px;
+
+	@media (width: $small-screen) {
+		margin: 0 8px;
+		padding: 25px 10px;
+	}
 	.contact-container {
 		display: flex;
 		justify-content: center;
@@ -15,6 +20,13 @@
 			&:hover {
 				color: $primaryColor;
 				cursor: pointer;
+			}
+			@media (width: $small-screen) {
+				font-size: 1.4rem;
+			}
+
+			@media (width: $xtra-small-screen) {
+				font-size: 1rem;
 			}
 		}
 	}
