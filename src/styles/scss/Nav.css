@@ -5,7 +5,7 @@ nav {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end; }
-  @media only screen and (min-width: 720px) {
+  @media (max-device-width: 620px) {
     nav {
       margin: 0;
       padding-top: 10px; }
@@ -17,7 +17,7 @@ nav {
     justify-content: flex-start; }
   nav .links-container {
     margin-top: 0; }
-    @media only screen and (min-width: 720px) {
+    @media only screen and (max-device-width: 620px) {
       nav .links-container {
         margin: 0 auto;
         padding: 13px; } }
@@ -25,7 +25,7 @@ nav {
       display: inline;
       color: #adadad;
       padding: 26px; }
-      @media only screen and (min-width: 720px) {
+      @media only screen and (max-device-width: 620px) {
         nav .links-container .links {
           padding: 5px 10px; } }
       nav .links-container .links a {
