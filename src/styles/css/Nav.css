@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+nav {
+  margin: 25px 75px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end; }
+  @media (max-device-width: 620px) {
+    nav {
+      margin: 0;
+      padding-top: 10px; }
+      nav .logo-container {
+        margin: 0 auto; } }
+  nav .jt-logo {
+    max-height: 60px;
+    max-width: 60px;
+    justify-content: flex-start; }
+  nav .links-container {
+    margin-top: 0; }
+    @media only screen and (max-device-width: 620px) {
+      nav .links-container {
+        margin: 0 auto;
+        padding: 13px; } }
+    nav .links-container .links {
+      display: inline;
+      color: #adadad;
+      padding: 26px; }
+      @media only screen and (max-device-width: 620px) {
+        nav .links-container .links {
+          padding: 5px 10px; } }
+      nav .links-container .links a {
+        text-decoration: none;
+        color: #adadad; }
+        nav .links-container .links a:hover {
+          color: #29d3d3;
+          cursor: pointer; }
+      nav .links-container .links .active-link {
+        color: #29d3d3; }

@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+.badges-wrapper {
+  padding: 25px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap; }

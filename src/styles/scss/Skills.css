@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+.skills-container {
+  padding: 20px;
+  text-align: center; }
+  .skills-container .skills-used {
+    text-align: center;
+    color: #29d3d3; }

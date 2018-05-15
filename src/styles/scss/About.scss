@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.about-section {
+	background-color: $primaryColor;
+	padding: 40px 0;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+
+	img {
+		width: 50%;
+		margin: 0 auto;
+		border-radius: 1.25rem;
+		filter: contrast(75%);
+
+		@media (max-device-width: $small-screen) {
+			width: 75%;
+		}
+	}
+
+	.about-me {
+		margin: 0 75px;
+		@media (max-device-width: $small-screen) {
+			margin: 0 8px;
+		}
+	}
+}

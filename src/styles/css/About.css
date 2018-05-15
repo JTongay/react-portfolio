@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+.about-section {
+  background-color: #29d3d3;
+  padding: 40px 0;
+  text-align: center;
+  color: #fff;
+  width: 100%; }
+  .about-section img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 1.25rem;
+    filter: contrast(75%); }
+    @media (max-device-width: 620px) {
+      .about-section img {
+        width: 75%; } }
+  .about-section .about-me {
+    margin: 0 75px; }
+    @media (max-device-width: 620px) {
+      .about-section .about-me {
+        margin: 0 8px; } }

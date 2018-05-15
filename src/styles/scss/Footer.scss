@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.contact {
+	border-top: 2px solid #adadad;
+	margin: 0 150px;
+	padding: 25px;
+
+	@media (max-device-width: $small-screen) {
+		margin: 0 8px;
+		padding: 25px 10px;
+	}
+	.contact-container {
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+
+		.contact-icons {
+			padding: 0 40px;
+			color: $secondaryColor;
+			&:hover {
+				color: $primaryColor;
+				cursor: pointer;
+			}
+			@media (max-device-width: $small-screen) {
+				font-size: 1.4rem;
+			}
+
+			@media (max-device-width: $xtra-small-screen) {
+				font-size: 1rem;
+			}
+		}
+	}
+}

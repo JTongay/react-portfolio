@@ -1,0 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+.image-container .project-screenshot {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px; }
