@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
   padding: 1rem; }
-  @media (width: 720px) {
+  @media (max-device-width: 620px) {
     .badge {
       padding: .25rem; } }
   .badge .badge-container {
@@ -16,10 +16,10 @@
     flex-shrink: 2;
     max-width: 580px;
     min-width: 280px; }
-    @media (width: 40rem) {
+    @media (max-device-width: 40rem) {
       .badge .badge-container {
         max-width: 295px; } }
-    @media (width: 56rem) {
+    @media (max-device-width: 56rem) {
       .badge .badge-container {
         max-width: 197px; } }
     .badge .badge-container:hover .badge-image {
@@ -30,12 +30,6 @@
       object-position: center;
       filter: contrast(70%);
       transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
-      @media (width: 40rem) {
-        .badge .badge-container .badge-image {
-          max-height: 295px; } }
-      @media (width: 56rem) {
-        .badge .badge-container .badge-image {
-          max-height: 197px; } }
     .badge .badge-container .badge-body {
       display: flex;
       flex: 1 1 auto;

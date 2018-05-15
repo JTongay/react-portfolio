@@ -13,14 +13,14 @@
 		border-radius: 1.25rem;
 		filter: contrast(75%);
 
-		@media (width: $small-screen) {
+		@media (max-device-width: $small-screen) {
 			width: 75%;
 		}
 	}
 
 	.about-me {
 		margin: 0 75px;
-		@media (width: $small-screen) {
+		@media (max-device-width: $small-screen) {
 			margin: 0 8px;
 		}
 	}

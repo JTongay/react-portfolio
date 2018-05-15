@@ -2,4 +2,7 @@
 
 .project-container {
 	margin: 0 150px;
+	@media (max-device-width: $small-screen) {
+		margin: 0 8px;
+	}
 }

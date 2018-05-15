@@ -3,7 +3,9 @@
 .links-container {
 	text-align: center;
 	padding: 30px;
-
+	@media (max-device-width: $small-screen) {
+		padding: 10px;
+	}
 	.link {
 		position: relative;
 		display: block;
@@ -48,6 +50,11 @@
 					transform: scaleX(1);
 				}
 			}
+		}
+
+		@media (max-device-width: $small-screen) {
+			border: 2px solid $primaryColor;
+			margin: 15px 0;
 		}
 	}
 }

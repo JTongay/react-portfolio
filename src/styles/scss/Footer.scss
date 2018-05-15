@@ -5,7 +5,7 @@
 	margin: 0 150px;
 	padding: 25px;
 
-	@media (width: $small-screen) {
+	@media (max-device-width: $small-screen) {
 		margin: 0 8px;
 		padding: 25px 10px;
 	}
@@ -21,11 +21,11 @@
 				color: $primaryColor;
 				cursor: pointer;
 			}
-			@media (width: $small-screen) {
+			@media (max-device-width: $small-screen) {
 				font-size: 1.4rem;
 			}
 
-			@media (width: $xtra-small-screen) {
+			@media (max-device-width: $xtra-small-screen) {
 				font-size: 1rem;
 			}
 		}

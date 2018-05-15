@@ -3,7 +3,7 @@
   border-top: 2px solid #adadad;
   margin: 0 150px;
   padding: 25px; }
-  @media (width: 500px) {
+  @media (width: 720px) {
     .contact {
       margin: 0 8px;
       padding: 25px 10px; } }
@@ -17,7 +17,7 @@
       .contact .contact-container .contact-icons:hover {
         color: #29d3d3;
         cursor: pointer; }
-      @media (width: 500px) {
+      @media (width: 720px) {
         .contact .contact-container .contact-icons {
           font-size: 1.4rem; } }
       @media (width: 275px) {

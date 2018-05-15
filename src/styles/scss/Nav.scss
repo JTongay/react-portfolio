@@ -7,7 +7,7 @@ nav {
 	justify-content: space-between;
 	align-items: flex-end;
 
-	@media only screen and (min-width: $small-screen) {
+	@media (max-device-width : $small-screen) {
 		margin: 0;
 		padding-top: 10px;
 		.logo-container {
@@ -23,7 +23,7 @@ nav {
 	.links-container {
 		margin-top: 0;
 
-		@media only screen and (min-width: $small-screen) {
+		@media only screen and (max-device-width: $small-screen) {
 			margin: 0 auto;
 			padding: 13px;
 		}
@@ -33,7 +33,7 @@ nav {
 			color: $secondaryColor;
 			padding: 26px;
 
-			@media only screen and (min-width: $small-screen) {
+			@media only screen and (max-device-width: $small-screen) {
 				padding: 5px 10px;
 			}
 

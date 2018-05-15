@@ -10,11 +10,11 @@
     margin: 0 auto;
     border-radius: 1.25rem;
     filter: contrast(75%); }
-    @media (width: 500px) {
+    @media (width: 720px) {
       .about-section img {
         width: 75%; } }
   .about-section .about-me {
     margin: 0 75px; }
-    @media (width: 500px) {
+    @media (width: 720px) {
       .about-section .about-me {
         margin: 0 8px; } }
