@@ -19,7 +19,8 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/styles/scss -o src/styles/css --watch --recursive",
     "sass": "sass --watch src/styles/scss:src/styles/css",
     "sass:build": "sass — update src/styles/scss:src/styles/css",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && aws s3 sync build/ s3://jtongay-portfolio"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
