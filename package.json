@@ -20,12 +20,17 @@
     "sass": "sass --watch src/styles/scss:src/styles/css",
     "sass:build": "sass — update src/styles/scss:src/styles/css",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && aws s3 sync build/ s3://jtongay-portfolio"
+    "deploy": "yarn build && aws s3 sync build/ s3://josephtongay.me"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-standard-jsx": "^5.0.0",
     "eslint-plugin-react": "^7.7.0",
+    "expect": "^22.4.3",
+    "mocha": "^5.1.1",
     "node-sass": "^4.9.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.3",
