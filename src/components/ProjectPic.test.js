@@ -2,17 +2,20 @@ import Enzyme, {mount, shallow} from 'enzyme';
 import React from 'react';
 import expect from 'expect';
 import Adapter from 'enzyme-adapter-react-16';
-import Nav from './Nav.component';
+import ProjectPic from './ProjectPic.component';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 const setup = () => {
-  const props = {};
-  return shallow(<Nav {...props} />)
+  const props = {
+      image: 'imageUrl'
+  };
+  return shallow(<ProjectPic {...props} />);
 };
+
 let wrapper;
 
-describe('<Nav />', () => {
+describe('<ProjectPic />', () => {
 
   beforeEach(() => {
     wrapper = setup();
@@ -20,14 +23,6 @@ describe('<Nav />', () => {
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();
-  });
-
-  it('should have my logo', () => {
-    expect(wrapper.find('.jt-logo')).toBeDefined();
-  });
-
-  it('should have a link to my email', () => {
-    expect(wrapper.find('a[href="mailto:joseph.tongay@gmail.com"]')).toBeDefined();
   });
 
 });

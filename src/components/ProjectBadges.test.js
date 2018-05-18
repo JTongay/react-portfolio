@@ -28,4 +28,13 @@ describe('<ProjectBadges />', () => {
     expect(wrapper).toBeDefined();
   });
 
+  it('should render the name of the project', () => {
+    expect(wrapper.find('.badge-title')).toBeDefined();
+    expect(wrapper.find('.badge-title').text()).toBe('Test Project Name');
+  });
+
+  it('should render a screenshot of the project', () => {
+    expect(wrapper.find('.badge-image')).toBeDefined();
+  })
+
 });
